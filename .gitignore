@@ -1,0 +1,11 @@
+*
+!Acc-v2
+!Acc-v2/*
+!datagridview
+!datagridview/datagridview.ahk
+!datagridview/datagridview.cs
+!datagridview/datagridview.csproj
+!datagridview/datagridview.csproj.user
+!LICENSE
+!README.md
+!.gitignore
