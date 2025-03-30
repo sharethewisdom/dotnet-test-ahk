@@ -25,3 +25,26 @@ cd datagridview
 dotnet build
 autohotkey datagridview.ahk
 ```
+
+note, to record the screen I changed the resolution ot the Windows VM to 640x480 and added this to the start of the script
+
+```autohotkey
+Sleep(2000)
+Run("C:\ProgramData\Chocolatey\bin\ffmpeg.exe -f gdigrab -framerate 10 -i desktop output.mkv", A_ScriptDir)
+WinWait("ahk_class ConsoleWindowClass ahk_exe ffmpeg.exe")
+WinMinimize("ahk_class ConsoleWindowClass ahk_exe ffmpeg.exe")
+WinWait("DataGridView test")
+WinMove(10,100,,,"DataGridView test")
+Sleep(1000)
+```
+
+The screen region options for gdigrab with `-i desktop` wouldn't work for me, so I then created a gif with something like below. 
+It crops the video to a region, with frames from 2 seconds up to 22 seconds, creates a pallet and optimizes the gif.
+
+```sh
+ffmpeg -i output.mkv -ss 2 -to 22 -vf "fps=10,crop=400:300:0:50,scale=400:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 datagridview.gif
+mogrify -layers optimize -fuzz 10% datagridview.gif
+rm output.mkv
+```
+
+there are probably better ways to do it though
