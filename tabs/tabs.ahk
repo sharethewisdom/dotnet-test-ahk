@@ -8,9 +8,6 @@ window := "Tabs test ahk_exe " executable
 if not WinExist(window) {
   Run(A_ScriptDir "\bin\Debug\net9.0-windows\" executable)
 }
-WinWait(window)
-WinMove(10,100,,,window)
-Sleep(1000)
 oAcc := ""
 While (oAcc = "") {
   if (hwnd := WinExist(window))
