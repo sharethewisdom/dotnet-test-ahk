@@ -17,6 +17,12 @@ While (oAcc = "") {
 tabcontrol := oAcc.FindElement({Role: 60},4)
 tabs := tabcontrol.FindElements({Role: 37},2)
 Loop {
+  if not (hwnd := WinExist(window))
+    break
+  if not WinActive(hwnd)
+    WinActivate(hwnd)
+  if not WinWaitActive(hwnd,,1000)
+    break
   if (tabs[1].State = 3145728)
     tabs[1].doDefaultAction()
   Sleep(2000)
