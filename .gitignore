@@ -6,6 +6,11 @@
 !datagridview/datagridview.cs
 !datagridview/datagridview.csproj
 !datagridview/datagridview.csproj.user
+!tabs
+!tabs/tabs.ahk
+!tabs/tabs.cs
+!tabs/tabs.csproj
+!tabs/tabs.csproj.user
 !LICENSE
 !README.md
 !.gitignore
