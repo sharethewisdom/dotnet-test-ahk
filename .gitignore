@@ -11,6 +11,11 @@
 !tabs/tabs.cs
 !tabs/tabs.csproj
 !tabs/tabs.csproj.user
+!checkbox
+!checkbox/checkbox.ahk
+!checkbox/checkbox.cs
+!checkbox/checkbox.csproj
+!checkbox/checkbox.csproj.user
 !LICENSE
 !README.md
 !.gitignore
