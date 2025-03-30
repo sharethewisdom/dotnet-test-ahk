@@ -5,6 +5,8 @@ testing .NET controls with autohotkey
 
 ![tabs](https://github.com/user-attachments/assets/7be23d44-a3e0-4529-aa63-518fff85cc55)
 
+![checkbox](https://github.com/user-attachments/assets/823ad3b2-12b3-474b-b446-7246d613f7de)
+
 ## install
 
 run as administrator:
