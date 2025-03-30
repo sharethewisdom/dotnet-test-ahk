@@ -3,6 +3,8 @@ testing .NET controls with autohotkey
 
 ![datagridview](https://github.com/user-attachments/assets/b531a876-8788-4ce2-8f1a-d7c3124408f2)
 
+![tabs](https://github.com/user-attachments/assets/7be23d44-a3e0-4529-aa63-518fff85cc55)
+
 ## install
 
 run as administrator:
