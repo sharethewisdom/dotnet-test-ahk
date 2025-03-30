@@ -29,7 +29,15 @@ dotnet build
 autohotkey datagridview.ahk
 ```
 
-note, to record the screen I changed the resolution ot the Windows VM to 640x480 and added this to the start of the script
+## must read
+
+* [UI Automation and Active Accessibility](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-msaa)
+* [AccessibleRole Enum](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.accessiblerole)
+* [AccessibleRole States](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.accessiblestates)
+
+## how to record the screen
+
+I changed the resolution ot the Windows VM to 640x480 and added this to the start of the script
 
 ```autohotkey
 Sleep(2000)
@@ -51,3 +59,4 @@ rm output.mkv
 ```
 
 there are probably better ways to do it though
+
